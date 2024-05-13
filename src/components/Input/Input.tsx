@@ -3,13 +3,10 @@ import React, {ChangeEvent} from "react";
 interface InputProps {
     disabled?: boolean;
     placeholder?: string;
-    handleChange?: ChangeEvent<HTMLInputElement>;
+    handleChange?: (value: ChangeEvent) => void;
 }
-export const Iinput:React.FC<InputProps>=({disabled,placeholder})=>{
-    const handleChange = (event:ChangeEvent<HTMLInputElement>)=>{
-        console.log(event.currentTarget);
-    }
-  return(
+export const Iinput:React.FC<InputProps>=({disabled,placeholder,handleChange})=>{
+    return(
      <input type="text" placeholder={placeholder} disabled={disabled} onChange={handleChange}/>
   )
 }

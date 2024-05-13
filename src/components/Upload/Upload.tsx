@@ -1,4 +1,5 @@
 import React from "react";
+// import classNames from "classnames";
 export interface UploadFile {
     name?: string;
     uid?: string;
@@ -6,6 +7,7 @@ export interface UploadFile {
     url?: string;
     percent?: number;
     rawFile?: File;
+
 }
 interface OnChangeEvent {
     file: UploadFile;
@@ -16,14 +18,15 @@ interface UploadProps {
     fileList?: UploadFile[];
     onChange?:(e:OnChangeEvent)=>void
     beforeUpload?: (fileList: File[]) => File[] | Promise<File[]> | boolean;
+    classname?:string
 }
 const Upload:React.FC<UploadProps>=(props)=>{
     const {
-       accept
+       accept,
     }=props
     // const [internalFileList, setInternalFileList] = useState([]);
     return(
-        <input type="file" accept={accept}/>
+        <input type="file" accept={accept}  />
     )
 
 }
