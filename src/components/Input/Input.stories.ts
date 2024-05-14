@@ -1,18 +1,12 @@
-import {Iinput} from "./Input.tsx";
+import {Input} from "./Input.tsx";
 import type {Meta, StoryObj} from "@storybook/react";
-import {fn} from "@storybook/test";
-const meta:Meta<typeof Iinput> = {
+const meta:Meta<typeof Input> = {
     title: 'Component/Input',
-    component: Iinput,
+    component: Input,
     parameters: {
-        // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
         layout: 'centered',
     },
-    // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
-
     tags: ['autodocs'],
-    // More on argTypes: https://storybook.js.org/docs/api/argtypes
-    // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
 } ;
 
 export default meta;
@@ -22,7 +16,9 @@ export const Truth: Story = {
     args: {
         placeholder:"请输入",
         disabled:false,
-        handleChange:fn()
+        prepand:'1235',
+        append:'2468',
+        size:'lg'
     },
 };
 export const False: Story = {
