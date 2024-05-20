@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 .input {
   display: flex;
   width: 100%;
@@ -80,15 +81,15 @@
   padding: 0;
   border: 0;
 }
-.input-group > .input-group-prepend,
-.input-group.input-group-append > .viking-input-inner {
-  @include border-right-radius(0);
-}
-
-.input-group > .input-group-append,
-.input-group.input-group-prepend > .input-inner {
-  @include border-left-radius(0);
-}
+//.input-group > .input-group-prepend,
+//.input-group.input-group-append > .viking-input-inner {
+//  @include border-right-radius(0);
+//}
+//
+//.input-group > .input-group-append,
+//.input-group.input-group-prepend > .input-inner {
+//  @include border-left-radius(0);
+//}
 
 .input-sm .input-inner {
   padding: $input-padding-y-sm $input-padding-x-sm;

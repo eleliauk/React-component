@@ -521,18 +521,6 @@ main {
   border: 0;
 }
 
-.input-group > .input-group-prepend,
-.input-group.input-group-append > .viking-input-inner {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group > .input-group-append,
-.input-group.input-group-prepend > .input-inner {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
 .input-sm .input-inner {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
